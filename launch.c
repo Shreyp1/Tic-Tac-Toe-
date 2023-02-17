@@ -4,13 +4,14 @@
 
 int main()
 {
-    int count = 1;
     reserBoard();
     while (winner == 0 || count == 10) {
         printBoard();
         playerMove1();
         printBoard();
-        checkWinner();
+        checkWinner1();
+        playerMove2();
+        checkWinner2();
     }
     return 0;
 }

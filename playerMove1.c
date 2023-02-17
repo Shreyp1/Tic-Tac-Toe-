@@ -6,5 +6,7 @@ void playerMove1() {
     printf("Enter column(1-3): ");
     scanf("%d",&y);
 
+    count++;
+
     board[x][y] = 'X';
 }
