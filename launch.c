@@ -4,7 +4,7 @@
 
 int main()
 {
-    reserBoard();
+    resetBoard();
     while (winner == 0 || count == 10) {
         printBoard();
         playerMove1();
