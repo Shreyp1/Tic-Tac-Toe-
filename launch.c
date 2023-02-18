@@ -4,14 +4,26 @@
 
 int main()
 {
+    char winner = ' ';
     resetBoard();
-    while (winner == 0 || count == 10) {
+
+    while (winner == ' ' && checkFreeSpaces() != 0) {
         printBoard();
         playerMove1();
-        printBoard();
-        checkWinner1();
+        winner = checkWinner();
+        if (winner != ' ' || checkFreeSpaces() == 0) {
+            break;
+        }
+
         playerMove2();
-        checkWinner2();
+        winner = checkWinner();
+        if (winner != ' ' || checkFreeSpaces() == 0) {
+            break;
+        }
     }
+    printBoard();
+    printWinner(winner);
+    printf("Thanks for Playing!\n\n");
+
     return 0;
 }
