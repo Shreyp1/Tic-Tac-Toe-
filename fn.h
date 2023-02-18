@@ -8,7 +8,7 @@ void printBoard();
 
 int count = 1;
 char board[3][3];
-int winner = 0;
+char winner = ' ';
 const char p1 = 'X';
 const char p2 = 'O';
 
