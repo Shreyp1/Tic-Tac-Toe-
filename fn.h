@@ -10,6 +10,6 @@ int checkFreeSpaces();
 
 char board[3][3];
 char winner;
-const char p1 = 'X';
-const char p2 = 'O';
+const char p1;
+const char p2;
 

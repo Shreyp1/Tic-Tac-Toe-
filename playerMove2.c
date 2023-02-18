@@ -1,6 +1,8 @@
 #include "fn.h" 
 void playerMove2() {
     int a,b;
+    char p1 = 'X';
+    char p2 = 'O';
     // printf("Enter row(1-3): ");
     // scanf("%d",&a);
     // printf("Enter column(1-3): ");
@@ -17,7 +19,7 @@ void playerMove2() {
         b--;
 
         if (board[a][b] != ' ') {
-            printf("Invalid move");
+            printf("Invalid move\n");
         }
         else {
             board[a][b] = p2;
