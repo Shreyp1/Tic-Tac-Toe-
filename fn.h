@@ -1,3 +1,4 @@
+#include<stdio.h>
 void resetBoard();
 void checkWinner1();
 void checkWinner2();
