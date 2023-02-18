@@ -4,6 +4,8 @@
 
 int main()
 {
+    char p1 = 'X';
+    char p2 = 'O';
     char winner = ' ';
     resetBoard();
 
@@ -14,7 +16,7 @@ int main()
         if (winner != ' ' || checkFreeSpaces() == 0) {
             break;
         }
-
+        printBoard();
         playerMove2();
         winner = checkWinner();
         if (winner != ' ' || checkFreeSpaces() == 0) {

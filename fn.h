@@ -7,9 +7,9 @@ void printWinner(char);
 void printBoard();
 int checkFreeSpaces();
 
-int count = 1;
-char board[3][3];
-char winner = ' ';
-const char p1 = 'X';
-const char p2 = 'O';
+
+extern char board[3][3];
+extern char winner;
+extern const char p1;
+extern const char p2;
 
